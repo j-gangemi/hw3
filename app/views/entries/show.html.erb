@@ -1,0 +1,9 @@
+<h1><%= @entry["title"] %></h1>
+
+<ul>
+  <li>Date: <%= @entry["occurred_on"] %></li>
+  <li>Description: <%= @entry["description"] %></li>
+  <li>Place: <%= @entry["place_id"] %></li>
+</ul>
+
+<p><a href="/places/<%= @entry["place_id"] %>">Back</a></p>

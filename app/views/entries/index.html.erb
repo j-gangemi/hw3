@@ -1,0 +1,11 @@
+<h1>Things I've Done</h1>
+ 
+ <ul>
+   <% for entry in @entries %>
+    <li>
+      <a href="/entries/<%= entry["id"] %>"><%= entry["title"] %></a>
+    </li>
+   <% end %>
+</ul>
+
+<p><a href="/entries/new">Add a new entry!</a></p>
